@@ -4,8 +4,8 @@
 .. codeauthor:: Tsuyoshi Hombashi <gogogo.vm@gmail.com>
 """
 
-from __future__ import print_function
-from __future__ import unicode_literals
+
+
 
 import datetime
 from decimal import Decimal

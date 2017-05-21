@@ -4,8 +4,8 @@
 .. codeauthor:: Tsuyoshi Hombashi <gogogo.vm@gmail.com>
 """
 
-from __future__ import absolute_import
-from __future__ import unicode_literals
+
+
 
 import copy
 
@@ -313,7 +313,7 @@ class DataPropertyExtractor(object):
         except TypeError:
             return col_dp_list
 
-        for col_idx, value_dp_list in enumerate(zip(*dp_matrix)):
+        for col_idx, value_dp_list in enumerate(list(zip(*dp_matrix))):
             try:
                 col_dp_list[col_idx]
             except IndexError:
@@ -365,7 +365,7 @@ class DataPropertyExtractor(object):
             self.__to_dataproperty_list(
                 data_list, type_hint=self.__get_col_type_hint(col_idx),
                 strip_str=self.strip_str_value)
-            for col_idx, data_list in enumerate(zip(*self.data_matrix))
+            for col_idx, data_list in enumerate(list(zip(*self.data_matrix)))
         ]))
 
         return self.__dp_matrix_cache

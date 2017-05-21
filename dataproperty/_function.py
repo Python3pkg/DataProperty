@@ -4,8 +4,8 @@
 .. codeauthor:: Tsuyoshi Hombashi <gogogo.vm@gmail.com>
 """
 
-from __future__ import absolute_import
-from __future__ import unicode_literals
+
+
 
 from collections import namedtuple
 from decimal import Decimal
@@ -56,7 +56,7 @@ class DigitCalculator(object):
                 upper_threshold.pow + i, upper_threshold.digit_len - i)
             for i, _
             in enumerate(
-                range(upper_threshold.digit_len, self.__min_digit_len - 1, -1))
+                list(range(upper_threshold.digit_len, self.__min_digit_len - 1, -1)))
         ]
 
     def get_decimal_places(self, value):

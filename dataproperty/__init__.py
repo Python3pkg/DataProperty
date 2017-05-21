@@ -4,7 +4,7 @@
 .. codeauthor:: Tsuyoshi Hombashi <gogogo.vm@gmail.com>
 """
 
-from __future__ import absolute_import
+
 
 from ._align import Align
 from ._align_getter import align_getter

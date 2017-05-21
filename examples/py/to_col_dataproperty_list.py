@@ -5,7 +5,7 @@
 .. codeauthor:: Tsuyoshi Hombashi <gogogo.vm@gmail.com>
 """
 
-from __future__ import print_function
+
 
 import datetime
 import sys
